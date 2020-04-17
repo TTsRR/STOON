@@ -10,7 +10,7 @@ chmod +x ts
 get() {
 rm -fr STOON.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/STOONabas/STOON/master/STOON.lua"
+wget "https://raw.githubusercontent.com/STOON/STOON/master/STOON.lua"
 lua start.lua
 }
 installall(){
