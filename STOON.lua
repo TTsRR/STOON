@@ -5724,8 +5724,8 @@ if text == ("تحديث السورس") and DevSTOON(msg) then
 send(msg.chat_id_,msg.id_,'☑┇تم التحديث')
 os.execute('rm -rf STOON.lua')
 os.execute('rm -rf start.lua')
-download_to_file('https://raw.githubusercontent.com/STOONabas/STOON/master/STOON.lua', 'STOON.lua') 
-download_to_file('https://raw.githubusercontent.com/STOONabas/STOON/master/start.lua', 'start.lua') 
+download_to_file('https://raw.githubusercontent.com/STOON/STOON/master/STOON.lua', 'STOON.lua') 
+download_to_file('https://raw.githubusercontent.com/STOON/STOON/master/start.lua', 'start.lua') 
 dofile('STOON.lua')  
 return false
 end
@@ -5840,7 +5840,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if DevSTOON(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/STOONabas/files_STOON/master/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/STOON/files_STOON/master/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -5878,7 +5878,7 @@ t = "*🗂┇ الملف » {"..file.."}\n📬┇ تم تعطيله وحذفه �
 else
 t = "*📬┇ بالتاكيد تم تعطيل وحذف ملف » {"..file.."} \n✓*"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/STOONabas/files_STOON/master/files_STOON/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/STOON/files_STOON/master/files_STOON/"..file)
 if res == 200 then
 os.execute("rm -fr STOON_Files/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -5898,7 +5898,7 @@ t = "*📬┇ بالتاكيد تم تنزيل وتفعيل ملف » {"..file..
 else
 t = "*🗂┇ الملف » {"..file.."}\n📬┇ تم تنزيله وتفعيله بنجاح \n💥*"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/STOONabas/files_STOON/master/files_STOON/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/STOON/files_STOON/master/files_STOON/"..file)
 if res == 200 then
 local chek = io.open("STOON_Files/"..file,'w+')
 chek:write(json_file)
@@ -6778,8 +6778,8 @@ if text == "تحديث السورس 📥" then
 send(msg.chat_id_,msg.id_,'☑┇تم التحديث')
 os.execute('rm -rf STOON.lua')
 os.execute('rm -rf start.lua')
-download_to_file('https://raw.githubusercontent.com/STOONabas/STOON/master/STOON.lua', 'STOON.lua') 
-download_to_file('https://raw.githubusercontent.com/STOONabas/STOON/master/start.lua', 'start.lua') 
+download_to_file('https://raw.githubusercontent.com/STOON/STOON/master/STOON.lua', 'STOON.lua') 
+download_to_file('https://raw.githubusercontent.com/STOON/STOON/master/start.lua', 'start.lua') 
 dofile('STOON.lua')  
 return false
 end
