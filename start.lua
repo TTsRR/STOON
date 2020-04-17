@@ -71,7 +71,7 @@ RunSTOON:write([[
 cd $HOME/STOON
 token="]]..database:get(Server_STOON.."Token_STOON")..[["
 rm -fr STOON.lua
-wget "https://raw.githubusercontent.com/STOONabas/STOON/master/STOON.lua"
+wget "https://raw.githubusercontent.com/STOON/STOON/master/STOON.lua"
 while(true) do
 rm -fr ../.telegram-cli
 ./tg -s ./STOON.lua -p PROFILE --bot=$token
