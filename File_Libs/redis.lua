@@ -277,8 +277,8 @@ print("\27[34m"..[[
    | $$ /$$$$$$$/| $$  | $$|  $$$$$$$| $$ \  $$|  $$$$$$$
    |__/|_______/ |__/  |__/ \_______/|__/  \__/ \_______/
                                                                                                                                                                          
->> CH > @STOONTEAM
->> CH > @nayy2019 
+>> CH > @TSHAKETEAM
+>> CH > @ZX_XX 
 >> DEVELOPER > @TAHAJ20
 >> DEVELOPER > @VVWVV
 ]].."\27[m")
@@ -804,8 +804,8 @@ local function connect_tcp(socket, parameters)
    | $$ /$$$$$$$/| $$  | $$|  $$$$$$$| $$ \  $$|  $$$$$$$
    |__/|_______/ |__/  |__/ \_______/|__/  \__/ \_______/
                                                                                                                                                                          
->> CH > @STOONTEAM
->> CH > @nayy2019 
+>> CH > @TSHAKETEAM
+>> CH > @ZX_XX 
 >> DEVELOPER > @TAHAJ20
 >> DEVELOPER > @VVWVV
 ]].."\27[m")
