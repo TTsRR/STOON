@@ -258,25 +258,25 @@ end
 
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(671212672) then  
-var = 'مطور السورس👨‍🔧'
+var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
-var = 'المطور الاساسي👨‍💻'  
+var = 'المطور الاساسي'
 elseif tonumber(user_id) == tonumber(bot_id) then  
-var = 'البوت🤖'
+var = 'البوت'
 elseif database:sismember(bot_id..'Sudo:User', user_id) then
-var = database:get(bot_id.."Sudo:Rd"..msg.chat_id_) or 'المطور👩‍🚒'  
+var = database:get(bot_id.."Sudo:Rd"..msg.chat_id_) or 'المطور'
 elseif database:sismember(bot_id..'Basic:Constructor'..chat_id, user_id) then
-var = database:get(bot_id.."BasicConstructor:Rd"..msg.chat_id_) or 'المنشئ اساسي👩‍🚀'
+var = database:get(bot_id.."BasicConstructor:Rd"..msg.chat_id_) or 'المنشئ اساسي'
 elseif database:sismember(bot_id..'Constructor'..chat_id, user_id) then
-var = database:get(bot_id.."Constructor:Rd"..msg.chat_id_) or 'المنشئ👨‍✈️'  
+var = database:get(bot_id.."Constructor:Rd"..msg.chat_id_) or 'المنشئ'
 elseif database:sismember(bot_id..'Manager'..chat_id, user_id) then
-var = database:get(bot_id.."Manager:Rd"..msg.chat_id_) or 'المدير👮‍♂️'  
+var = database:get(bot_id.."Manager:Rd"..msg.chat_id_) or 'المدير'
 elseif database:sismember(bot_id..'Mod:User'..chat_id, user_id) then
-var = database:get(bot_id.."Mod:Rd"..msg.chat_id_) or 'الادمن👷‍♂️'  
+var = database:get(bot_id.."Mod:Rd"..msg.chat_id_) or 'الادمن'
 elseif database:sismember(bot_id..'Special:User'..chat_id, user_id) then  
-var = database:get(bot_id.."Special:Rd"..msg.chat_id_) or 'المميز👨‍🎓'  
+var = database:get(bot_id.."Special:Rd"..msg.chat_id_) or 'المميز'
 else  
-var = database:get(bot_id.."Memp:Rd"..msg.chat_id_) or 'العضو👶'
+var = database:get(bot_id.."Memp:Rd"..msg.chat_id_) or 'العضو'
 end  
 return var
 end 
