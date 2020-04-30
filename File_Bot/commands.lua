@@ -69,6 +69,27 @@ Text = [[
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
 end
+if text == "فتح الصور" or text == "فتح المتحركه" or text == "قفل الصور" or text == "قفل البوتات" or text == "فتح البوتات" or text == "قفل المتحركه" or text == "فتح الصوت" or text == "قفل الملصقات" or text == "فتح الصور" or text == "قفل الملصقات" or text == "فتح الاضافه" or text == "قفل الاضافه" or text == "فتح الدخول" or text == "قفل الدخول" or text == "فتح الاشعارات" or text == "قفل الاشعارات" or text == "فتح التعديل" or text == "قفل التعديل" or text == "فتح المنشن" or text == "قفل المنشن" or text == "فتح الرابط" or text == "قفل الرابط" or text == "فتح الفيديو" or text == "قفل الفيديو" or text == "فتح الاغاني" or text == "قفل الاغاني" or text == "فتح التوجيه" or text == "قفل التوجيه" or text == "فتح الملفات" or text == "قفل الملفات" or text == "فتح السيلفي" or text == "قفل السيلفي" or text == "فتح الجيهات" or text == "قفل الجيهات" or text == "فتح الماركداون" or text == "قفل الماركداون" or text == "فتح الكلايش" or text == "قفل الكلايش" or text == "فتح التكرار" or text == "قفل التكرار" then
+if not Mod(msg) then
+send(msg.chat_id_, msg.id_,'📮 ‹ هذا الامر يخص : [الادمن‹المدير‹المنشئ‹المطور]] فقط] 🗽')
+return false
+end
+print(AddChannel(msg.sender_user_id_))
+if AddChannel(msg.sender_user_id_) == false then
+local textchuser = database:get(bot_id..'text:ch:user')
+if textchuser then
+send(msg.chat_id_, msg.id_,'['..textchuser..']')
+else
+send(msg.chat_id_, msg.id_,'🔖| لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n 📌| اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+end
+return false
+end
+local help_text = database:get(bot_id..'help2_text')
+Text = [[
+]]
+send(msg.chat_id_, msg.id_,(help_text or Text)) 
+return false
+end
 if text == 'م2' then
 if not Mod(msg) then
 send(msg.chat_id_, msg.id_,'⚠️| هاذا الامر خاص بالادمنيه\n🔖| ارسل {م10} لعرض اوامر الاعضاء')
@@ -480,6 +501,27 @@ Text = [[
 🔆| تنظيف الكروبات
 ء ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 🔖| CH » @ZNZNN
+]]
+send(msg.chat_id_, msg.id_,(help_text or Text)) 
+return false
+end
+if text == "تفعيل صيح" or text == "تعطيل ضافني" or text == "تفعيل صيح" or text == "تعطيل ضافني" or text == "تفعيل الايدي" or text == "تعطيل الايدي" or text == "تفعيل الايدي بالصوره" or text == "تعطيل الايدي بالصوره" or text == "تفعيل التسليه" or text == "تعطيل التسليه" or text == "تفعيل الرفع" or text == "تعطيل الرفع" or text == "تفعيل الحظر" or text == "تعطيل الحظر" or text == "تفعيل ردود المطور" or text == "تعطيل ردود المطور" or text == "تفعيل ردود المدير" or text == "تعطيل ردود المدير" or text == "تفعيل اطردني" or text == "تعطيل اطردني" or text == "تنزيل ادمن " or text == "رفع ادمن" or text == "الندراء " or text == "مسح الادمنيه" then
+if not Manager(msg) then
+send(msg.chat_id_, msg.id_,'📮 ‹ هذا الامر يخص : {‹المدير‹المنشئ‹المطور} فقط 🗽')
+return false
+end
+print(AddChannel(msg.sender_user_id_))
+if AddChannel(msg.sender_user_id_) == false then
+local textchuser = database:get(bot_id..'text:ch:user')
+if textchuser then
+send(msg.chat_id_, msg.id_,'['..textchuser..']')
+else
+send(msg.chat_id_, msg.id_,'🔖| لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n 📌| اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+end
+return false
+end
+local help_text = database:get(bot_id..'help2_text')
+Text = [[
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
