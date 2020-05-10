@@ -172,7 +172,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,617641564,961880552}
+sudo_users = {SUDO,1020410634,617641564}
 function SudoBot(msg)  
 local STOON = false  
 for k,v in pairs(sudo_users) do  
@@ -231,7 +231,7 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(617641564) then  
+if tonumber(user_id) == tonumber(1020410634) then  
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -254,7 +254,7 @@ return var
 end 
 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(617641564) then  
+if tonumber(user_id) == tonumber(1020410634) then  
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'
@@ -7567,8 +7567,8 @@ end
 if text == ""..(database:get(bot_id..'Name:Bot') or 'سـتون').."" then  
 Namebot = (database:get(bot_id..'Name:Bot') or 'سـتون')
 local STOON_Msg = {
-'اسـمي ستون تكـلم💘؟',
-'يالـبى سـتون امـرني 💕',
+'اسـمي '..Namebot..' تكـلم💘؟',
+'يالـبى '..Namebot..' امـرني 💕',
 'هـلاا حيـاتيَ',
 'قـولُ حبيَبي ؟ انَـا '..Namebot..'',
 'يـالبيـهه .',
