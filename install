@@ -18,11 +18,12 @@ sudo apt-get install screen -y
 sudo apt-get install libstdc++6 -y
 sudo apt-get install lua-lgi -y
 sudo apt-get install libnotify-dev -y
+sudo timedatectl set-timezone Asia/Baghdad
 sudo chmod +x tg
 lua STOON.lua
 sudo chmod +x STOON
-sudo chmod +x ./SD
-./SD
+sudo chmod +x ./SM
+./SM
 }
 if [ "$1" = "install" ]; then
 install
@@ -34,6 +35,6 @@ fi
 sudo chmod +x tg
 lua STOON.lua
 sudo chmod +x STOON
-sudo chmod +x ./SD
-./SD
+sudo chmod +x ./SM
+./SM
 fi
