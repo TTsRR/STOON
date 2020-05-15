@@ -946,7 +946,7 @@ dofile('STOON.lua')
 end
 if text == 'الاصدار⚙️' and SudoBot(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,'📡┇ اصدار سورس صدام \n📟┇ الاصدار ←{ 1.3v}') 
+send(msg.chat_id_, msg.id_,'📡┇ اصدار سورس ستون \n📟┇ الاصدار ←{ 1.3v}') 
 end
 if text == "ضع اسم للبوت ®" and SudoBot(msg) then  
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
@@ -2240,7 +2240,7 @@ Text = [[
 ▃▂▃▂▃▂▃▂▃▂▃▂▃▂▃
       ⚜⌦ STOON TEAM ⌫⚜
 🔰 ▃▂▃▂▃▂▃▂▃▂▃🔰
-〠⇇لنصيب سورس صدام 
+〠⇇لنصيب سورس ستون 
 ↬👨🏻‍💻┇[قناة السورس](t.me/Ooko0) 
 ♔▃▂▃▂▃▂▃▂▃▂▃▂♔
 
@@ -7189,8 +7189,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'صدام').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'صدام')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'ستون').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'ستون')
 local STOON_Msg = {
 'دا اشرب جاي مفارغلك',
 'لابسك لتلح',
@@ -7772,7 +7772,7 @@ end
 end
 end
 -------------------------------
-if text == ""..(database:get(bot_id..'Name:Bot') or 'صدام').." غادر" or text == 'غادر' then  
+if text == ""..(database:get(bot_id..'Name:Bot') or 'ستون').." غادر" or text == 'غادر' then  
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,'☑️┇ تم مغادرة المجموعه') 
@@ -7781,7 +7781,7 @@ end
 return false  
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'صدام')
+Namebot = (database:get(bot_id..'Name:Bot') or 'ستون')
 send(msg.chat_id_, msg.id_,'اسمي القميل ['..Namebot..']') 
 end
 if text == 'الاحصائيات' then
@@ -10301,7 +10301,7 @@ if (text and text == "تفعيل اوامر التحشيش") then
 send(msg.chat_id_, msg.id_, ' 📮┇ تم تفعيل اوامر التحشيش')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'صدام')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'ستون')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
