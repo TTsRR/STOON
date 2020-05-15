@@ -142,9 +142,9 @@ print([[
 ─▄█▀█▄──▄███▄─
 ▐█░██████████▌
 ─██▒█████████─
-──▀████████▀──│@RRTTT
+──▀████████▀──│@iii4i4
 ─────▀██▀─────
-│تـــم تطوير السورس من قبل اونلاين  
+│تـــم تطوير السورس من قبل سـيد الرجـالُ  
 Dev : online
 
 
@@ -748,7 +748,7 @@ local keyboard = {
 {'المشتركين 👷🏼‍♂️','المجموعات 💬'},
 {'ضع كليشه ستارت 📃','حذف كليشه ستارت 🃏'},
 {'اذاعه 👥','اذاعه خاص 🗣️'},
-{'اذاعه بالتثبيت 📣','السيـرفر'},
+{'اذاعه بالتثبيت 📣','السيرفـر'},
 {'اذاعه بالتوجيه📫','اذاعه بالتوجيه خاص 📬'},
 {'تغير رساله الاشتراك','تغير الاشتراك'},
 {'حذف رساله الاشتراك 🚫'},
@@ -912,7 +912,7 @@ if text == 'حذف كليشه ستارت 🃏' and SudoBot(msg) then
 database:del(bot_id..'Start:Bot') 
 send(msg.chat_id_, msg.id_,'🔖┇تم حذف كليشه ستارت') 
 end
-if text == 'السيرفر🔎' and SudoBot(msg) then 
+if text == 'السيرفـر🔎' and SudoBot(msg) then 
  local text2 = 'Info Server : \n'
   local STOON1 = database:info()
   text2 = text2..'1 - *Uptime Days* : `'..STOON1.server.uptime_in_days..'('..STOON1.server.uptime_in_seconds..' seconds)`\n'
@@ -922,7 +922,7 @@ if text == 'السيرفر🔎' and SudoBot(msg) then
 send(msg.chat_id_, msg.id_, text2)  
 end
 
-if text == 'السيـرفر' and SudoBot(msg) then 
+if text == 'السيرفـر' and SudoBot(msg) then 
 send(msg.chat_id_, msg.id_, io.popen([[
 linux_version=`lsb_release -ds`
 memUsedPrc=`free -m | awk 'NR==2{printf "%sMB/%sMB {%.2f%}\n", $3,$2,$3*100/$2 }'`
@@ -2244,7 +2244,7 @@ Text = [[
 ↬👨🏻‍💻┇[قناة السورس](t.me/Ooko0) 
 ♔▃▂▃▂▃▂▃▂▃▂▃▂♔
 
-🔰↬[مطوره السورس](t.me/Ooko0)
+🔰↬[مطوره السورس](t.me/iii4i4)
 
 👨🏻‍💻┇[مطور السورس](t.me/kkfkk)
 ☏▂▃▂▃▂▃▂▃▂▃▂▃▂☏
@@ -6647,20 +6647,17 @@ return false
 end
 database:setex(bot_id.."CHENG:ID"..msg.chat_id_..""..msg.sender_user_id_,240,true)  
 local Text= [[
-🔘| يمكنك اضافه بنفـسكك كل ما عليك تضغـط ع الامر ورتب:
-
-في القـنَاهہ ايـديات بشكل روعـهہ✨
-@EEuEEu
-
-- `#rdphoto` > تعليق الصوره
-- `#username` > اسم المستخدم
-- `#msgs` > عدد رسائل المستخدم
-- `#photos` > عدد صور المستخدم
-- `#id` > ايدي المستخدم
-- `#auto` > تفاعل المستخدم
-- `#stast` > موقع المستخدم 
-- `#edit` > عدد السحكات
-- `#game` > النقود
+📮┇ ارسل الان النص
+📮┇ يمكنك اضافه :
+- #rdphoto > تعليق الصوره
+- #username > اسم المستخدم
+- #msgs > عدد رسائل المستخدم
+- #photos > عدد صور المستخدم
+- #id > ايدي المستخدم
+- #auto > تفاعل المستخدم
+- #stast > موقع المستخدم 
+- #edit > عدد السحكات
+- #game > المجوهرات
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false  
@@ -7952,7 +7949,7 @@ local edit = tonumber(database:get(bot_id..'edits'..msg.chat_id_..result.sender_
 local rtp = Rutba(result.sender_user_id_,msg.chat_id_)
 local username = ('[@'..data.username_..']' or 'لا يوجد')
 local iduser = result.sender_user_id_
-send(msg.chat_id_, msg.id_,'🎟️┇ ايديه »(`'..iduser..'`)\n🎭┇ معرفه »('..username..')\n📌┇ رتبته »('..rtp..')\n✏┇ تعديلاته »('..edit..')\n🗳️┇ النقاطي »('..NUMPGAME..')\n🔖┇ جهاته »('..Contact..')\n📨┇ رسائله »('..Msguser..')')
+send(msg.chat_id_, msg.id_,'🎟️┇ ايديه »(`'..iduser..'`)\n🎭┇ معرفه »('..username..')\n📌┇ رتبته »('..rtp..')\n✏┇ تعديلاته »('..edit..')\n🗳️┇ المجوهراتي »('..NUMPGAME..')\n🔖┇ جهاته »('..Contact..')\n📨┇ رسائله »('..Msguser..')')
 end,nil)
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
@@ -7969,7 +7966,7 @@ local edit = tonumber(database:get(bot_id..'edits'..msg.chat_id_..result.id_) or
 local rtp = Rutba(result.id_,msg.chat_id_)
 local username = ('[@'..data.username_..']' or 'لا يوجد')
 local iduser = result.id_
-send(msg.chat_id_, msg.id_,'🎟️┇ ايديه »(`'..iduser..'`)\n🎭┇ معرفه »('..username..')\n📌┇ رتبته »('..rtp..')\n✏┇ تعديلاته »('..edit..')\n🗳️┇ النقاطي »('..NUMPGAME..')\n🔖┇ جهاته »('..Contact..')\n📨┇ رسائله »('..Msguser..')')
+send(msg.chat_id_, msg.id_,'🎟️┇ ايديه »(`'..iduser..'`)\n🎭┇ معرفه »('..username..')\n📌┇ رتبته »('..rtp..')\n✏┇ تعديلاته »('..edit..')\n🗳️┇ المجوهراتي »('..NUMPGAME..')\n🔖┇ جهاته »('..Contact..')\n📨┇ رسائله »('..Msguser..')')
 end,nil)
 else
 send(msg.chat_id_, msg.id_,'⚠┇ المعرف غير صحيح ')
@@ -8483,7 +8480,7 @@ database:del(bot_id.."gemadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_)
 local numadded = string.match(text, "(%d+)") 
 local iduserr = database:get(bot_id..'idgem:user'..msg.chat_id_)  
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..iduserr,numadded)  
-send(msg.chat_id_, msg.id_,  1, "??┇ تم اضافة له {"..numadded..'} من النقاطي', 1 , 'md')  
+send(msg.chat_id_, msg.id_,  1, "??┇ تم اضافة له {"..numadded..'} من المجوهراتي', 1 , 'md')  
 end
 ------------------------------------------------------------
 if text and text:match("^اضف رسائل (%d+)$") and msg.reply_to_message_id_ == 0 and Constructor(msg) then    
@@ -8494,19 +8491,19 @@ send(msg.chat_id_, msg.id_, '✉┇ ارسل لي عدد الرسائل الان
 return false
 end
 ------------------------------------------------------------------------
-if text and text:match("^اضف نقاطي (%d+)$") and msg.reply_to_message_id_ == 0 and Constructor(msg) then  
-taha = text:match("^اضف نقاطي (%d+)$")
+if text and text:match("^اضف مجوهراتي (%d+)$") and msg.reply_to_message_id_ == 0 and Constructor(msg) then  
+taha = text:match("^اضف مجوهراتي (%d+)$")
 database:set(bot_id..'idgem:user'..msg.chat_id_,taha)  
 database:setex(bot_id.."gemadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
-send(msg.chat_id_, msg.id_, '☑️┇ ارسل لي عدد النقاطي التي تريد اضافتها') 
+send(msg.chat_id_, msg.id_, '☑️┇ ارسل لي عدد المجوهراتي التي تريد اضافتها') 
 return false
 end
 ------------------------------------------------------------------------
-if text and text:match("^اضف نقاط (%d+)$") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
-local Num = text:match("^اضف نقاط (%d+)$")
+if text and text:match("^اضف مجوهرات (%d+)$") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
+local Num = text:match("^اضف مجوهرات (%d+)$")
 function reply(extra, result, success)
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..result.sender_user_id_,Num)  
-send(msg.chat_id_, msg.id_,"☑️┇ تم اضافة له {"..Num..'} من نقاط')  
+send(msg.chat_id_, msg.id_,"☑️┇ تم اضافة له {"..Num..'} من مجوهرات')  
 end
 tdcli_function ({ID = "GetMessage",chat_id_=msg.chat_id_,message_id_=tonumber(msg.reply_to_message_id_)},reply, nil)
 return false
@@ -8522,7 +8519,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_=msg.chat_id_,message_id_=tonumber(msg.reply_to_message_id_)},reply, nil)
 return false
 end
-if text == 'نقاطي' or text == 'نقاطي' then 
+if text == 'مجوهراتي' or text == 'مجوهراتي' then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -8534,14 +8531,14 @@ return false
 end
 local Num = database:get(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_) or 0
 if Num == 0 then 
-Text = '📌┇ لم تلعب اي لعبه للحصول على نقاطي'
+Text = '📌┇ لم تلعب اي لعبه للحصول على مجوهراتي'
 else
-Text = '📮┇ عدد نقاطي التي ربحتها هي *» { '..Num..' } نقاطيه *'
+Text = '📮┇ عدد مجوهراتي التي ربحتها هي *» { '..Num..' } مجوهراتيه *'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text and text:match("^بيع نقاطي (%d+)$") or text and text:match("^بيع نقاطي (%d+)$") then
-local NUMPY = text:match("^بيع نقاطي (%d+)$") or text:match("^بيع نقاطي (%d+)$") 
+if text and text:match("^بيع مجوهراتي (%d+)$") or text and text:match("^بيع مجوهراتي (%d+)$") then
+local NUMPY = text:match("^بيع مجوهراتي (%d+)$") or text:match("^بيع مجوهراتي (%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -8556,17 +8553,17 @@ send(msg.chat_id_,msg.id_,"\n*📮┇ لا استطيع البيع اقل من 1
 return false 
 end
 if tonumber(database:get(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_)) == tonumber(0) then
-send(msg.chat_id_,msg.id_,'📮┇ ليس لديك نقاط في الالعاب\n☑️┇ اذا كنت تريد ربح نقاطي \n📌┇ ارسل الالعاب وابدأ اللعب ! ') 
+send(msg.chat_id_,msg.id_,'📮┇ ليس لديك مجوهرات في الالعاب\n☑️┇ اذا كنت تريد ربح مجوهراتي \n📌┇ ارسل الالعاب وابدأ اللعب ! ') 
 else
 local NUM_GAMES = database:get(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_)
 if tonumber(NUMPY) > tonumber(NUM_GAMES) then
-send(msg.chat_id_,msg.id_,'\n📮┇ ليس لديك نقاط بهاذ العبه \n☑️┇ لزيادة نقاطيك في اللعبه \n📌┇ ارسل الالعاب وابدأ اللعب !') 
+send(msg.chat_id_,msg.id_,'\n📮┇ ليس لديك مجوهرات بهاذ العبه \n☑️┇ لزيادة مجوهراتيك في اللعبه \n📌┇ ارسل الالعاب وابدأ اللعب !') 
 return false 
 end
 local NUMNKO = (NUMPY * 50)
 database:decrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_,NUMPY)  
 database:incrby(bot_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_,NUMNKO)  
-send(msg.chat_id_,msg.id_,'☑️┇ تم خصم *» { '..NUMPY..' }* من نقاطك \n💌┇ وتم اضافة* » { '..(NUMPY * 50)..' } رساله الى رسالك *')
+send(msg.chat_id_,msg.id_,'☑️┇ تم خصم *» { '..NUMPY..' }* من مجوهراتك \n💌┇ وتم اضافة* » { '..(NUMPY * 50)..' } رساله الى رسالك *')
 end 
 return false 
 end
