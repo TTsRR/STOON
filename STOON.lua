@@ -940,7 +940,7 @@ end
 
 if text == 'تحديث السورس ☑️' and SudoBot(msg) then 
 os.execute('rm -rf STOON.lua')
-os.execute('wget https://raw.githubusercontent.com/SDAMHOSIN/STOON/master/STOON.lua')
+os.execute('wget https://raw.githubusercontent.com/TTsRR/STOON/master/STOON.lua')
 send(msg.chat_id_, msg.id_,'🗂️┇ تم تحديث السورس')
 dofile('STOON.lua')  
 end
@@ -2182,7 +2182,7 @@ end
 return false
 end
 os.execute('rm -rf STOON.lua')
-os.execute('wget https://raw.githubusercontent.com/SDAMHOSIN/STOON/master/STOON.lua')
+os.execute('wget https://raw.githubusercontent.com/TTsRR/STOON/master/STOON.lua')
 send(msg.chat_id_, msg.id_,'🗂️┇ تم تحديث السورس')
 dofile('STOON.lua')  
 end
