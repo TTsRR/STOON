@@ -6995,7 +6995,7 @@ for i,lock in pairs(list) do
 database:del(bot_id..lock..msg.chat_id_)    
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,'🔰┇ بواسطه ← ['..utf8.sub(data.first_name_,0,60)..'](T.ME/'..(data.username_ or 'Ooko0')..') \n〽️┇ تـم فـتح التفليش\n⛔┇ هسه يتفلش لكروب 😂🌚 ')  
+send(msg.chat_id_, msg.id_,'🔰┇ بواسطه ← ['..utf8.sub(data.first_name_,0,60)..'](T.ME/'..(data.username_ or 'Ooko0')..') \n〽️┇ تـم فـتح التفليش\n⛔┇ هسه يتفلش لقـروبّ 😂🌚 ')  
 end,nil)   
 end
 if text == 'طرد المحذوفين' or text == 'مسح المحذوفين' then  
@@ -8296,7 +8296,7 @@ send(msg.chat_id_, msg.id_,'⚠┇ لا اسطيع صيح معرفات المج�
 return false  
 end
 if result.id_ then
-send(msg.chat_id_, msg.id_,'👤┇ تعال حبي يصيحونك بل كروب [@'..username..']') 
+send(msg.chat_id_, msg.id_,'👤┇ تـعال ياحـالـيَ بّيـصيحـوولُـكِ فـي القـروبّ [@'..username..']') 
 return false
 end
 end
@@ -9048,12 +9048,16 @@ send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
 -----
-
-
+if text and text:match("(.*)(خالد)(.*)") then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {"[مٌـطـورالـرَدِوَدِ](t.me/VllCV)" }
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
 
 if text and text:match("(.*)(شادي)(.*)") then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {"⇣ۦ ٰ" }
+local texting = {"[مٌـطـورالـسوَرَسِ](t.me/kkfkk)" }
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
