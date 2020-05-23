@@ -10329,7 +10329,7 @@ database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)
 end
 database:set(bot_id..'Set:Amth:Bot'..msg.chat_id_,true)
 end
-if text == 'تعطيل الالعاب' or text == 'تعطيل اللعبه' and Manager(msg) then   
+if text == 'تعطيل الالعاب' or text == 'تعطيل اللعبه' and Mod(msg) then  
 if database:get(bot_id..'Lock:Games'..msg.chat_id_)  then
 database:del(bot_id..'Lock:Games'..msg.chat_id_) 
 Text = '\n🚫┋ تم تعطيل الالعاب' 
@@ -10338,7 +10338,7 @@ Text = '\n🚫┋ بالتاكيد تم تعطيل الالعاب'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تفعيل الالعاب' or text == 'تفعيل اللعبه' and Manager(msg) then  
+if text == 'تفعيل الالعاب' or text == 'تفعيل اللعبه' and Mod(msg) then  
 if not database:get(bot_id..'Lock:Games'..msg.chat_id_)  then
 database:set(bot_id..'Lock:Games'..msg.chat_id_,true) 
 Text = '\n☑┋ تم تفعيل الالعاب' 
