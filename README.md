@@ -1,2 +1,0 @@
-# STOON
-STOON
